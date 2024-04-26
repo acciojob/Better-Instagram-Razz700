@@ -3,8 +3,8 @@ let dragelem=null;
         let temp=null;
         let sw=null;
         let a=document.getElementById("parent");
-         render();
-        function render(){
+        // render();
+       // function render(){
           a=document.getElementById("parent");
       for (let i = 0; i < a.children.length; i++) {
         a.children[i].addEventListener("drag",(e)=>{ 
@@ -21,5 +21,5 @@ for (let k = 0; k < a.children.length; k++) {
       e.target.replaceWith(dragelem);
      sw.replaceWith(temp);
         dragelem=null;
-        render();
-    });  }}
+       // render();
+    });  }//}
