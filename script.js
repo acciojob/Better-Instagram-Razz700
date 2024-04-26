@@ -7,7 +7,7 @@ let dragelem=null;
         function render(){
           a=document.getElementById("parent");
       for (let i = 0; i < a.children.length; i++) {
-        a.children[i].addEventListener("dragstart",(e)=>{ 
+        a.children[i].addEventListener("drag",(e)=>{ 
           sw=e.target; 
         dragelem=sw.cloneNode(true);
         });
@@ -22,6 +22,4 @@ for (let k = 0; k < a.children.length; k++) {
      sw.replaceWith(temp);
         dragelem=null;
         render();
-    });
-  
-  }}
+    });  }}
